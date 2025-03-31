@@ -11,6 +11,8 @@ int main() {
     char cidade[30];
     int populacao;
     float area;
+    float densidade;
+    float percapita;
     float pib;
     int pontos;
     
@@ -20,8 +22,11 @@ int main() {
     char CIDADE[30];
     int POPULACAO;
     float AREA;
+    float DENSIDADE;
+    float PERCAPITA;
     float PIB;
     int PONTOS;
+
 
     // inserindo dados da carta 1
     printf("Cidade 1\nDigite o Estado 1:");
@@ -78,7 +83,11 @@ int main() {
     printf("Nome da Cidade: %s \n", cidade); 
     printf("População: %i \n", populacao); 
     printf("Área: %.2f \n", area);
+    densidade = populacao / area;
+    printf("Densidade Populacional: %.2f \n", densidade);
     printf("PIB: %.2f \n", pib);
+    percapita = pib / populacao;
+    printf("PIB Per Capita: %.2f \n", percapita);
     printf("Pontos Turísticos: %i \n", pontos);
     printf("\n");
     
@@ -88,7 +97,11 @@ int main() {
     printf("Nome da Cidade: %s \n", CIDADE); 
     printf("População: %i \n", POPULACAO); 
     printf("Área: %.2f \n", AREA);
+    DENSIDADE = POPULACAO / AREA;
+    printf("Densidade Populacional: %.2f \n", DENSIDADE);
     printf("PIB: %.2f \n", PIB);
+    PERCAPITA = PIB / POPULACAO;
+    printf("PIB Per Capita: %.2f \n", PERCAPITA);
     printf("Pontos Turísticos: %i \n", PONTOS);
     
 
