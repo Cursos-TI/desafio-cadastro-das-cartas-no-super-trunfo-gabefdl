@@ -4,32 +4,39 @@
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 
+// NÃO ESTOU CONSEGUINDO AVANÇAR NO DESAFIO
+// QUANDO TENTO EXECUTAR O PROGRAMA COM AS DUAS CARTAS DECLARADAS
+// OS VALORES SE EMBARALHAM
+// SOMENTE QUANDO EXECUTO COM SOMENTE UMA DAS CARTAS DECLARADAS O PROGFRAMA FUNCIONA
+
 int main() {
     // criação das variáveis da carta 1
-    char estado[30];
-    char codigo[30];
-    char cidade[30];
-    int populacao;
+    char estado[20];
+    char codigo[20];
+    char cidade[20];
+    unsigned long int populacao;
     float area;
     float densidade;
     float percapita;
-    float pib;
+    long int pib;
     int pontos;
+    float superpoder;
     
       // criação das variáveis da carta 2
     char ESTADO[30];
     char CODIGO[30];
     char CIDADE[30];
-    int POPULACAO;
+    unsigned long int POPULACAO;
     float AREA;
     float DENSIDADE;
     float PERCAPITA;
-    float PIB;
+    long int PIB;
     int PONTOS;
+    float SUPERPODER;
 
 
     // inserindo dados da carta 1
-    printf("Cidade 1\nDigite o Estado 1:");
+    /*printf("Cidade 1\nDigite o Estado 1:");
     scanf("%s", &estado );
     printf("\n");
     printf("Digite o Código da Carta 1: ");
@@ -39,18 +46,18 @@ int main() {
     scanf("%s", &cidade );
     printf("\n");
     printf("Digite o número da população 1: ");
-    scanf("%i", &populacao);
+    scanf("%u", &populacao);
     printf("\n");
     printf("Digite o valor da área 1: ");
     scanf("%f", &area);
     printf("\n");
     printf("Digite o valor do PIB 1: ");
-    scanf("%f", &pib);
+    scanf("%li", &pib);
     printf("\n");
     printf("Digite o número de pontos turísticos 1: ");
     scanf("%i", &pontos);
     printf("\n");
-    
+  */    
     
       // inserindo dados da carta 2
     printf("Cidade 2\n");
@@ -64,13 +71,13 @@ int main() {
     scanf("%s", &CIDADE );
     printf("\n");
     printf("Digite o número da população 2: ");
-    scanf("%i", &POPULACAO);
+    scanf("%u", &POPULACAO);
     printf("\n");
     printf("Digite o valor da área 2: ");
     scanf("%f", &AREA);
     printf("\n");
     printf("Digite o valor do PIB 2: ");
-    scanf("%f", &PIB);
+    scanf("%li", &PIB);
     printf("\n");
     printf("Digite o número de pontos turísticos 2: ");
     scanf("%i", &PONTOS);
@@ -78,33 +85,39 @@ int main() {
     
 
     // apresentando os valores inseridos para carta 1
-    printf("Cidade 1 \nEstado: %s \n", estado);
+    /*printf("Cidade 1 \nEstado: %s \n", estado);
     printf("Código da Carta: %s \n", codigo); 
     printf("Nome da Cidade: %s \n", cidade); 
-    printf("População: %i \n", populacao); 
+    printf("População: %u \n", populacao); 
     printf("Área: %.2f \n", area);
-    densidade = populacao / area;
+    densidade = (float)populacao / area;
     printf("Densidade Populacional: %.2f \n", densidade);
-    printf("PIB: %.2f \n", pib);
-    percapita = pib / populacao;
+    printf("PIB: %li \n", pib);
+    percapita = pib / (float)populacao;
     printf("PIB Per Capita: %.2f \n", percapita);
     printf("Pontos Turísticos: %i \n", pontos);
     printf("\n");
-    
+    superpoder = populacao + area + pib + pontos + percapita + (1/densidade);
+    printf("Superpoder de carta %s: %f", codigo, superpoder);
+    printf("\n");
+    */
       // apresentando os valores inseridos para carta 2
     printf("Cidade 2 \nEstado: %s \n", ESTADO);
     printf("Código da Carta: %s \n", CODIGO); 
     printf("Nome da Cidade: %s \n", CIDADE); 
-    printf("População: %i \n", POPULACAO); 
+    printf("População: %u \n", POPULACAO); 
     printf("Área: %.2f \n", AREA);
-    DENSIDADE = POPULACAO / AREA;
+    DENSIDADE = POPULACAO / AREA  ;
     printf("Densidade Populacional: %.2f \n", DENSIDADE);
-    printf("PIB: %.2f \n", PIB);
+    printf("PIB: %li \n", PIB);
     PERCAPITA = PIB / POPULACAO;
     printf("PIB Per Capita: %.2f \n", PERCAPITA);
     printf("Pontos Turísticos: %i \n", PONTOS);
+    SUPERPODER = POPULACAO + AREA + PIB + PONTOS + PERCAPITA, (1/DENSIDADE);
+    printf("Superpoder de carta %s: %f", CODIGO, SUPERPODER);
+    printf("\n");
     
-
+    
     return 0;
     }
    
