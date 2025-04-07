@@ -14,7 +14,7 @@ int main() {
     char estado[20];
     char codigo[20];
     char cidade[20];
-    unsigned long int populacao;
+    long int populacao;
     float area;
     float densidade;
     float percapita;
@@ -26,7 +26,7 @@ int main() {
     char ESTADO[30];
     char CODIGO[30];
     char CIDADE[30];
-    unsigned long int POPULACAO;
+    long int POPULACAO;
     float AREA;
     float DENSIDADE;
     float PERCAPITA;
@@ -36,7 +36,7 @@ int main() {
 
 
     // inserindo dados da carta 1
-    /*printf("Cidade 1\nDigite o Estado 1:");
+    printf("Cidade 1\nDigite o Estado 1:");
     scanf("%s", &estado );
     printf("\n");
     printf("Digite o Código da Carta 1: ");
@@ -46,7 +46,7 @@ int main() {
     scanf("%s", &cidade );
     printf("\n");
     printf("Digite o número da população 1: ");
-    scanf("%u", &populacao);
+    scanf("%li", &populacao);
     printf("\n");
     printf("Digite o valor da área 1: ");
     scanf("%f", &area);
@@ -57,7 +57,7 @@ int main() {
     printf("Digite o número de pontos turísticos 1: ");
     scanf("%i", &pontos);
     printf("\n");
-  */    
+      
     
       // inserindo dados da carta 2
     printf("Cidade 2\n");
@@ -71,7 +71,7 @@ int main() {
     scanf("%s", &CIDADE );
     printf("\n");
     printf("Digite o número da população 2: ");
-    scanf("%u", &POPULACAO);
+    scanf("%li", &POPULACAO);
     printf("\n");
     printf("Digite o valor da área 2: ");
     scanf("%f", &AREA);
@@ -85,10 +85,10 @@ int main() {
     
 
     // apresentando os valores inseridos para carta 1
-    /*printf("Cidade 1 \nEstado: %s \n", estado);
+    printf("Cidade 1 \nEstado: %s \n", estado);
     printf("Código da Carta: %s \n", codigo); 
     printf("Nome da Cidade: %s \n", cidade); 
-    printf("População: %u \n", populacao); 
+    printf("População: %li \n", populacao); 
     printf("Área: %.2f \n", area);
     densidade = (float)populacao / area;
     printf("Densidade Populacional: %.2f \n", densidade);
@@ -100,12 +100,13 @@ int main() {
     superpoder = populacao + area + pib + pontos + percapita + (1/densidade);
     printf("Superpoder de carta %s: %f", codigo, superpoder);
     printf("\n");
-    */
+    
+    
       // apresentando os valores inseridos para carta 2
     printf("Cidade 2 \nEstado: %s \n", ESTADO);
     printf("Código da Carta: %s \n", CODIGO); 
     printf("Nome da Cidade: %s \n", CIDADE); 
-    printf("População: %u \n", POPULACAO); 
+    printf("População: %li \n", POPULACAO); 
     printf("Área: %.2f \n", AREA);
     DENSIDADE = POPULACAO / AREA  ;
     printf("Densidade Populacional: %.2f \n", DENSIDADE);
